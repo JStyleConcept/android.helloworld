@@ -22,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="net.jstyleconcept.android.helloworld.SourceCodeActivity"
+            android:label="@string/title_activity_source_code" >
+        </activity>
     </application>
 
 </manifest>
