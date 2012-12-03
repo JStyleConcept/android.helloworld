@@ -24,9 +24,14 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent intent=new Intent(MainActivity.this,SourceCodeActivity.class);
-		this.startActivity(intent);
+		switch(item.getOrder()) {
+			case 0:
+				this.startActivity(intent);
+				break;
+			case 1:
+				this.finish();
+				break;
+		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	
 }
