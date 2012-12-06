@@ -11,13 +11,13 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		this.getMenuInflater().inflate(R.menu.activity_main, menu);
+		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
 
@@ -26,10 +26,10 @@ public class MainActivity extends Activity {
 		Intent intent=new Intent(MainActivity.this,SourceCodeActivity.class);
 		switch(item.getOrder()) {
 			case 0:
-				this.startActivity(intent);
+				startActivity(intent);
 				break;
 			case 1:
-				this.finish();
+				MainActivity.this.finish();
 				break;
 		}
 		return super.onOptionsItemSelected(item);
