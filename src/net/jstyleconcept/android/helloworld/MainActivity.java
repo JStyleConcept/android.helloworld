@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 				break;
 			case 1:
-				moveTaskToBack(true);
+				finish();
 				break;
 		}
 		return super.onOptionsItemSelected(item);
